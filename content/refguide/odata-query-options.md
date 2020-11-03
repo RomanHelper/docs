@@ -24,7 +24,7 @@ A single object can be retrieved by passing the object identifier in the URI. Fo
 
 ### 2.3 Retrieving Associated Objects
 
-Associated objects can be retrieved by passing the `$expand` query parameter. For example: `/odata/myservice/Exployees?$expand=Cars,Address/City`.
+Associated objects can be retrieved by passing the `$expand` query parameter. For example: `/odata/myservice/Employees?$expand=Cars,Address/City`.
 
 {{% alert type="info" %}}
 The `$expand` feature was introduced in Studio Pro [8.11.0](/releasenotes/studio-pro/8.11#8110).
@@ -118,7 +118,8 @@ Filtering on an associated object or list in this way is possible when you [expo
 
 You can sort the result using the `$orderby` query option. For example: `?$orderby=Name` or `?$orderby=BirthPlace/CityName`.
 
-The default direction is ascending, and you can make this explicit. For example: `?$orderby=Name asc`.
+The default direction is ascending, and you can make this 
+icit. For example: `?$orderby=Name asc`.
 
 You can also order the result in a descending direction. For example: `?$orderby=Name desc`.
 
